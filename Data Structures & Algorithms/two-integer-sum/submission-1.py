@@ -1,0 +1,9 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in nums:
+            for j in nums:
+                if i+j==target and i !=j:
+                    m=min(i,j)
+                    t=max(i,j)
+                    return [nums.index(m),nums.index(t)]
+        
